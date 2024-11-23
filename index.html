@@ -1,12 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tahsina Moiukh</title>
+  <style>
+    body {
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      background-color: #ffffff;
+      color: #000000;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+    background-color: #ffffff; /* White background */
+    width: 100%;
+    max-width: 850px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(1, 0, 0, 0.5); /* Shadow effect */
+    border-radius: 30px; /* Rounded corners for the container */
+    margin-top: 60px;  /* Adds space from the top */
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align the text to the left */
+    scroll-behavior: smooth;
+}
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      margin-bottom: 20px;
+    }
+
+    nav {
+  display: flex;
+  justify-content: flex-start; /* Aligns the nav links to the right */
+  align-items: left; /* Centers the content vertically */
+  background-color: #dcdada; /* Light background for the box */
+  border: 1px solid #000000; /* Border color matches the theme */
+  border-radius: 10px; /* Rounded corners for the box */
+  padding: 10px 40px; /* Inner spacing */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted effect */
+  width: fit-content; /* Shrinks the nav box to fit content */
+  margin-left: auto; /* Pushes the nav to the right */
+}
+
+nav a {
+  text-decoration: none;
+  color: #000000; /* Link color */
+  padding: 10px; /* Spacing inside each link */
+  
+}
+
+nav a:hover {
+  text-decoration: underline; /* Hover effect */
+}
+
+    header img {
+      width: 250px;
+      height: 250px;
+      margin-right: 20px;
+      margin-top: -50px;
+      border-radius: 100%;
+    }
+
+    header div {
+      text-align: left;
+    }
+
+    h1 {
+      font-size: 1em;
+      margin: 0;
+      color: #333;
+    }
+
+    h2 {
+      font-size: 1.2em;
+      color: #555;
+      margin-top: 5px;
+    }
+
+    .bio, section {
+      margin-top: 20px;
+    }
+
+    section {
+      padding: 20px 0;
+    }
+
+    .contact-info a {
+      color: #008cba;
+      text-decoration: none;
+    }
+
+    /* Smooth scrolling */ 
+    html {
+      scroll-behavior: smooth;
+    }
+
+      /* Shining Text */
+.big-name {
+  font-size: 2.2em; 
+  font-weight: bold;
+  text-align: center; 
+  color: #000000; 
+  margin-top: 20px; 
+  margin-top: -10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.name-container {
+  display: flex;
+  justify-content: center; /* Centers the name horizontally */
+}
+
+.shining-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    .shining-text {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #292828;
+      letter-spacing: 2.5px;
+      position: relative;
+      text-align: right;
+      margin-bottom: 15px;
+      margin-top: 5px;
+      overflow: hidden;
+        /* Add text stroke */
+  -webkit-text-stroke: 0.5px rgb(0, 0, 0); 
+
+    }
+
+    .shining-text::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+      animation: shineEffect 3s infinite ease-in-out;
+    }
+
+    .shining-border {
+      padding: 15px 30px;
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #fff;
+      text-align: right;
+      border: 3px solid #fff;
+      border-radius: 10px;
+      margin-top: 10px;
+
+    }
+
+
+    /* Animation for shine effect */
+    @keyframes shineEffect {
+      0% {
+        left: -100%;
+      }
+      50% {
+        left: 100%;
+      }
+      100% {
+        left: 100%;
+      }
+    }
+
+
+.research-interest-label {
+  font-size: 1em;
+  margin-left: 450px; 
+  margin-top: -110px;
+  color: #000000;
+  text-align: right;
+}
+a {
+    color: rgb(97, 97, 97); 
+    text-decoration: none; 
+    margin-right: 0px; 
+    font-size: 1em; 
+    margin-left: 0px;
+  }
+
+  a:hover {
+    color: rgb(0, 0, 0); 
+  }
+
+  </style>
 </head>
 <body>
-    <h1>Welcome to My Personal Website!</h1>
-    <p>This is a simple website built using GitHub Pages.</p>
+
+  <div class="container">
+    <nav>
+      <a href="index.html#resume">Resume</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <header>
+      <img src="IMG_2227_Original.jpg" alt="Tahsina Moiukh">
+      
+      <div class="research-interest-label">
+        Research Interests <i class="fas fa-arrow-down"></i>
+        <div class="shining-text">Natural Language Processing</div>
+        <div class="shining-text">Artificial Intelligence</div>
+        <div class="shining-text">Machine Learning</div>
+    </div>
+    </header>
+    <div class="name-container">
+        <h1 class="big-name" >Tahsina Moiukh</h1>
+        <div>
+            <a href="mailto:tahsina.moiukh@g.bracu.ac.bd" target="_blank">
+                <i class="fas fa-envelope"></i>
+            </a>
+              <a href="https://github.com/moiukht" target="_blank">
+                <i class="fab fa-github"></i>
+              </a> 
+            <a href="https://www.linkedin.com/in/tahsina-m-8947472a4/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+              </a> 
+        </div>
+    </div>
+<!-- BIO ABOUT ME -->
+    <section id="bio" class="bio" style=" margin: 20px; margin-bottom: -45px;">
+        <h3 style="font-size: 1.7em;" >About Me</h3>
+      <p>I'm Tahsina Moiukh, a final-year undergraduate student in the <a href= "https://cse.sds.bracu.ac.bd" 
+        style="color: rgb(3, 3, 170); text-decoration: none;">Department of CSE </a>at<a href="https://www.bracu.ac.bd" 
+        style="color: rgb(3, 3, 170); text-decoration: none;"> BRAC University</a>.
+         I expect to graduate in early 2025 and plan to pursue higher studies 
+        thereafter. My research interests include Natural Language Processing (NLP), Artificial Intelligence (AI), 
+        and Machine Learning (ML). Currently, I am working part-time as a Student Tutor 
+        in the <a href= "https://cse.sds.bracu.ac.bd" 
+        style="color: rgb(3, 3, 170); text-decoration: none;">Department of CSE </a>at<a 
+        href="https://www.bracu.ac.bd" style="color: rgb(3, 3, 170); text-decoration: none;"> BRAC University</a>. </p>
+        <p>In my free time, I enjoy travelling, binge-watching TV shows, and, of course, sleeping. 🗺️📺🍿💤</p>
+
+    </section>
+<!-- RESUME -->
+    <section id="resume" style="margin: 20px;">
+        <h3 style="font-size: 2em;">My Resume</h3>
+    <!-- WORK EXPERIENCE -->
+        <h3 style="font-size: 1.5em; display: flex; align-items: center;">
+            <i class="fas fa-briefcase" style="margin-right: 10px; color: #000000; text-shadow: 5px 5px 5px rgba(79, 75, 75, 0.5);"></i> 
+            Work Experience
+          </h3>
+        <div style="border-left: 3px solid #6c757d; padding-left: 15px; margin-top: 20px;">
+          <div style="margin-bottom: 30px; position: relative;">
+            <div style="position: absolute; width: 10px; height: 10px; background-color: #6c757d; border-radius: 50%; left: -21.5px; top: 5px;"></div>
+            <h4 style="color: rgb(59, 59, 59);">Undergraduate Teaching Assistant(Part-time)</h4>
+            <p>
+              Department of Computer Science and Engineering,<br>
+              BRAC University<br>
+              <span style="color: #083768;">May 2024 — Present</span>
+              
+              <p>Assisted with: <br>CSE221- Algorithms</p>
+          </div>
+      
+          <div style="margin-bottom: 30px; position: relative;">
+            <div style="position: absolute; width: 10px; height: 10px; background-color: #6c757d; border-radius: 50%; left: -21.5px; top: 5px;"></div>
+            <h4 style="color: rgb(59, 59, 59);">Undergraduate Teaching Assistant(Part-time)</h4>
+            <p>
+              Department of Mathematics and Natural Sciences,<br>
+              BRAC University<br>
+              <span style="color: #083768;">October 2023 — May 2024</span>
+              
+              <p>Assisted with: <br>STA201- Statistics and Probability</p>
+          </div>
+        </div>
+        <!-- RESEARCH EXPERIENCE -->
+        
+        <h3 style="font-size: 1.5em; display: flex; align-items: center;">
+            <i class="fas fa-chart-line" style="margin-right: 10px; color: #000000; text-shadow: 5px 5px 5px rgba(79, 75, 75, 0.5);"></i> 
+            Research Experience
+          </h3>
+        <div style="border-left: 3px solid #6c757d; padding-left: 15px; margin-top: 20px;">
+          <div style="margin-bottom: 30px; position: relative;">
+            <div style="position: absolute; width: 10px; height: 10px; background-color: #6c757d; border-radius: 50%; left: -21.5px; top: 5px;">
+            </div>
+            <div style="display: flex; align-items: flex-start;">
+                <img src="thesis_poster.png" alt="thesis-poster" width="150" height="140" style="margin-right: 10px;">
+                <div>
+                  <h4 style="color: rgb(59, 59, 59); margin: 0; font-size: 1.2em;">
+                    Analyzing Political Bias in Media Discourse: A Computational Approach Using NLP to Examine Israel-Palestine Coverage
+                  </h4>
+                  <p style="color: rgb(19, 21, 105); margin: 5px 0 0; font-size: 0.9em;">
+                    Natural Language Processing, Computational Social Science, Artificial Intelligence, Machine Learning
+                  </p>
+                  <p style = "font-size: 0.9em;">
+                    In this undergraduate thesis, I co-developed a computational framework to assess political
+bias in media discourse, which focused on coverage of the Israel-Palestine conflict. This work
+also involved creating a labeled dataset with seven bias categories. My contributions included
+annotating the unlabeled dataset with my two co-authors to create a high-quality labeled
+dataset, employing the GPT-3 API for data augmentation to address class imbalance, and
+co-implementing the pipeline for model training and evaluation. To work with the limited
+computing resources, I fine-tuned state-of-the-art models, including RoBERTa and LLaMA,
+using QLoRA to optimize the pre-trained models. We achieved an F1 score of 77.4% in a
+seven-class classification task. A key aspect of the research involved a thorough error
+analysis of false positives and false negatives across all classes which helped to determine
+the model’s shortcomings and potential areas for development. Currently, we are reviewing the manuscript of our work for publication.
+                  </p>
+                </div>
+              </div>
+              
+        </div>
+            
+        </div>
+
+            <!-- EDUCATION-->
+            <h3 style="font-size: 1.5em; display: flex; align-items: center;">
+              <i class="fas fa-briefcase" style="margin-right: 10px; color: #000000; text-shadow: 5px 5px 5px rgba(79, 75, 75, 0.5);"></i> 
+              Education
+            </h3>
+          <div style="border-left: 3px solid #6c757d; padding-left: 15px; margin-top: 20px;">
+            <div style="margin-bottom: 30px; position: relative;">
+              <div style="position: absolute; width: 10px; height: 10px; background-color: #6c757d; border-radius: 50%; left: -21.5px; top: 5px;"></div>
+              <h4 style="color: rgb(59, 59, 59);">B.Sc. in Computer Science and Engineering</h4>
+              <p>
+                Department of Computer Science and Engineering,<br>
+                BRAC University<br>
+                <span style="color: #083768;">June 2021 — Present</span>
+                <p style="text-decoration-line: underline;">Noteable Courses:</p>
+                <p style="font-size: 0.9em;">
+                  <p style="font-size: 0.9em;">CSE440- Natural Language Processing</p>
+                  <p style="font-size: 0.9em;">CSE422- Artificial Intelligence</p>
+                  <p style="font-size: 0.9em;">CSE428- Image Processing</p>
+                  <p style="font-size: 0.9em;">STA201- Statistics and Probability</p>
+                  <p style="font-size: 0.9em;">CSE321- Operating Systems</p>
+                  <p style="font-size: 0.9em;">MAT216- Linear Algebra and Fourier Analysis</p>
+                  <p style="font-size: 0.9em;">CSE340- Computer Architecture</p>
+                </p>
+              </p>
+            </div>
+            </div>
+
+    <!--Technical Skills -->
+    <h3 style="font-size: 1.5em; display: flex; align-items: center;">
+        <i class="fas fa-graduation-cap" style="margin-right: 10px; color: #000000; text-shadow: 5px 5px 5px
+         rgba(79, 75, 75, 0.5);"></i>
+        Technical Skills
+      </h3>
+    <div style="border-left: 3px solid #6c757d; padding-left: 15px; margin-top: 20px;">
+    </h3>
+      <div style="margin-bottom: 30px; position: relative;">
+        <div style="position: absolute; width: 10px; height: 10px; background-color: #6c757d; border-radius: 50%; left: -21.5px; top: 5px;"></div>
+        <h4 style="color: rgb(59, 59, 59);">Languages</h4>
+        <div> Python, Java, Javascript, C/C++, x86 Assembly, Bison/Flex, Bash, MySQL
+        </div>
+        
+      <div style="margin-bottom: 30px; position: relative;">
+        <div style="position: absolute; width: 10px; height: 10px; background-color: #6c757d; border-radius: 50%; left: -21.5px; top: 5px;"></div>
+        <h4 style="color: rgb(59, 59, 59);">Frameworks</h4>
+        <div> PyTorch, Tensorflow, Django REST, ReactJS, Node.js, Express, Git, LaTeX
+        </div>
+      <div style="margin-bottom: 30px; position: relative;">
+        <div style="position: absolute; width: 10px; height: 10px; background-color: #6c757d; border-radius: 50%; left: -21.5px; top: 5px;"></div>
+        <h4 style="color: rgb(59, 59, 59);">Libraries</h4>
+        <div>Sklearn, Pandas, Matplotlib, Seaborn, OpenGL, MongoDB </div>
+
+    </div>
+
+    </section>
+
+      <p style="margin-bottom: 0px; font-size: small; margin-left: 710px; color: #008cba;">
+        <a href="mailto:tahsina.moiukh@g.bracu.ac.bd" style="color: #008cba;">Email </a>
+        <a href="https://www.linkedin.com/in/tahsina-m-8947472a4/" style="color: #008cba;"> LinkedIn </a> 
+        <a href="https://github.com/moiukht" style="color: #008cba;"> GitHub</a></p>
+
 </body>
+
 </html>
+

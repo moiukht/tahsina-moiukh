@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tahsina Moiukh</title>
+  <style>
+    body {
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      background-color: #ffffff;
+      color: #000000;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+    background-color: #ffffff; /* White background */
+    width: 100%;
+    max-width: 850px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(1, 0, 0, 0.5); /* Shadow effect */
+    border-radius: 30px; /* Rounded corners for the container */
+    margin-top: 60px;  /* Adds space from the top */
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align the text to the left */
+}
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      margin-bottom: 20px;
+    }
+
+    nav {
+  display: flex;
+  justify-content: flex-start; /* Aligns the nav links to the right */
+  align-items: left; /* Centers the content vertically */
+  background-color: #dcdada; /* Light background for the box */
+  border: 1px solid #000000; /* Border color matches the theme */
+  border-radius: 10px; /* Rounded corners for the box */
+  padding: 10px 40px; /* Inner spacing */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  width: fit-content; /* Shrinks the nav box to fit content */
+  margin-left: auto; /* Pushes the nav to the right */
+}
+
+nav a {
+  text-decoration: none;
+  color: #000000; /* Link color */
+  padding: 10px; /* Spacing inside each link */
+  
+}
+
+nav a:hover {
+  text-decoration: underline; /* Hover effect */
+}
+
+
+
+    header img {
+      width: 250px;
+      height: 250px;
+      margin-right: 20px;
+      margin-top: -50px;
+      border-radius: 100%;
+    }
+
+    header div {
+      text-align: left;
+    }
+
+    h1 {
+      font-size: 1em;
+      margin: 0;
+      color: #333;
+    }
+
+    h2 {
+      font-size: 1.2em;
+      color: #555;
+      margin-top: 5px;
+    }
+
+    .bio, section {
+      margin-top: 20px;
+    }
+
+    section {
+      padding: 20px 0;
+    }
+
+    .contact-info a {
+      color: #008cba;
+      text-decoration: none;
+    }
+
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth; 
+    }
+
+      /* Shining Text */
+.big-name {
+  font-size: 2.2em; 
+  font-weight: bold;
+  text-align: center; 
+  color: #000000;
+  margin-top: 20px; 
+  margin-top: -10px;
+}
+
+.name-container {
+  display: flex;
+  justify-content: center; 
+}
+
+.shining-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    .shining-text {
+      font-size: 1em;
+      font-weight: bold;
+      color: #000000;
+      letter-spacing: 2.5px;
+      position: relative;
+      text-align: right;
+      margin-bottom: 15px;
+      margin-top: 5px;
+      overflow: hidden;
+
+      /* Glow effect for text */
+      /* animation: glowText 3s infinite alternate; */
+    }
+
+    .shining-text::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+      animation: shineEffect 2s infinite ease-in-out;
+    }
+
+    .shining-border {
+      padding: 15px 30px;
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #fff;
+      text-align: right;
+      border: 3px solid #fff;
+      border-radius: 10px;
+      margin-top: 10px;
+
+      /* Glow effect for the border */
+      animation: glowBorder 3s infinite alternate;
+    }
+
+    /* Animation for glowing text */
+    @keyframes glowText {
+      0% {
+        text-shadow: 0 0 5px #ffffff, 0 0 10px rgb(255, 255, 255)rgb(0, 0, 0)0 20px rgb(0, 0, 0);
+      }
+      60% {
+        text-shadow: 0 0 20px #ffffff, 0 0 30px rgb(255, 255, 255), 0 0 40px rgb(0, 0, 0);
+      }
+    }
+
+    /* Animation for shine effect */
+    @keyframes shineEffect {
+      0% {
+        left: -100%;
+      }
+      50% {
+        left: 100%;
+      }
+      100% {
+        left: 100%;
+      }
+    }
+
+
+.research-interest-label {
+  font-size: 1em;
+  margin-left: 550px;
+  margin-top: -110px;
+  color: #000000;
+  text-align: right;
+}
+a {
+    color: rgb(97, 97, 97); 
+    text-decoration: none; 
+    margin-right: 5px; 
+    font-size: 1em;
+    margin-left: 10px;
+  }
+
+  a:hover {
+    color: rgb(0, 0, 0); 
+  }
+ 
+.projects-heading {
+    margin-bottom: 20px;
+    text-align: left; 
+    font-size: 2.2em; 
+    font-weight: bold;
+    color: #000000; 
+}
+
+
+  </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="index.html">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+        <nav>
+          <a href="index.html#resume">Resume</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+    
+      
+
+    <section id="projects">
+        <div class="projects-heading" >
+            Projects
+        </div>
+        <div>
+            <h3>Diet Planner with AI Integration</h3>
+            <p style=" margin-left: 720px; margin-top:-40px;"><a href="https://github.com/moiukht/Diet_Planner_471project" target="_blank" style="color: #1d73d4; font-size: 0.9em;"> View On GitHub </a>
+            </p>
+            <p>
+             Designed and developed a personalized diet planning system using the MERN stack. Implemented the application with a React-based frontend and a Node.js/Express backend, integrated with MongoDB for data storage. Incorporated AI technologies like GPT and Gemini to dynamically generate tailored meal plans based on user preferences, health goals, and dietary restrictions.
+            </p>
+          
+            <h3>Sentiment Analysis of IMDB Movie Reviews</h3>
+            <p style=" margin-left: 720px; margin-top:-40px;"><a href="https://github.com/moiukht/Sports_Detection_image-processing_428project" target="_blank" style="color: #1d73d4; font-size: 0.9em;"> View On GitHub </a>
+            </p>
+            <p>
+              Conducted a sentiment analysis project on IMDB movie reviews, implementing various machine learning and deep learning approaches. Designed and evaluated shallow models, LSTM, and Bi-LSTM architectures to classify reviews as positive or negative. Focused on text preprocessing, feature extraction, and hyperparameter tuning to enhance model performance.
+            </p>
+          
+            <h3>Sports Image Classification System </h3>
+            <p style=" margin-left: 720px; margin-top:-40px;"><a href="https://github.com/moiukht/Sports_Detection_image-processing_428project" target="_blank" style="color: #1d73d4; font-size: 0.9em;"> View On GitHub </a>
+            </p>
+            <p>
+              Developed an image processing project to classify the type of sport being played based on input photos. Designed and implemented a deep learning model from scratch using convolutional neural networks (CNNs) to process and analyze images. Preprocessed the dataset, consisting of images representing various sports, to optimize training and evaluation. Achieved accurate classification by fine-tuning model architecture and hyperparameters.
+            </p>
+          
+            <h3>Pet Care Game for Kids</h3>
+                <p style=" margin-left: 720px; margin-top:-40px;"><a href="https://github.com/moiukht/Pet_Caring_Game_423project" target="_blank" style="color: #1d73d4; font-size: 0.9em;"> View On GitHub </a>
+                </p>
+                <p>
+              Developed an interactive pet game using OpenGL, where users can engage with a virtual pet in a dynamic environment. Designed and implemented 2D and 3D graphics to represent pet interactions and environment changes. The game featured real-time user input handling, animation, and basic AI behavior for the pet.
+            </p>
+          </div>
+          
+
+  </div>
+
+</body>
+
+</html>
+

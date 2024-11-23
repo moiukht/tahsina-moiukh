@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tahsina Moiukh</title>
+  <style>
+    body {
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      background-color: #ffffff;
+      color: #000000;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+    background-color: #ffffff; 
+    width: 100%;
+    max-width: 850px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(1, 0, 0, 0.5); 
+    border-radius: 30px; /* Rounded corners for the container */
+    margin-top: 60px;  /* Adds space from the top */
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align the text to the left */
+}
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      margin-bottom: 20px;
+    }
+
+    nav {
+  display: flex;
+  justify-content: flex-start; /* Aligns the nav links to the right */
+  align-items: left; /* Centers the content vertically */
+  background-color: #dcdada; /* Light background for the box */
+  border: 1px solid #000000; /* Border color matches the theme */
+  border-radius: 10px; /* Rounded corners for the box */
+  padding: 10px 40px; /* Inner spacing */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted effect */
+  width: fit-content; /* Shrinks the nav box to fit content */
+  margin-left: auto; /* Pushes the nav to the right */
+}
+
+nav a {
+  text-decoration: none;
+  color: #000000; /* Link color */
+  padding: 10px; /* Spacing inside each link */
+  
+}
+
+nav a:hover {
+  text-decoration: underline; /* Hover effect */
+}
+
+
+
+    header img {
+      width: 250px;
+      height: 250px;
+      margin-right: 20px;
+      margin-top: -50px;
+      border-radius: 100%;
+    }
+
+    header div {
+      text-align: left;
+    }
+
+    h1 {
+      font-size: 1em;
+      margin: 0;
+      color: #333;
+    }
+
+    h2 {
+      font-size: 1.2em;
+      color: #555;
+      margin-top: 5px;
+    }
+
+    .bio, section {
+      margin-top: 20px;
+    }
+
+    section {
+      padding: 20px 0;
+    }
+
+    .contact-info a {
+      color: #008cba;
+      text-decoration: none;
+    }
+
+    /* Smooth scrolling */
+    html {
+     scroll-behavior: smooth;
+    }
+
+      /* Shining Text */
+.big-name {
+  font-size: 2.2em; /* Adjust this value to make it larger */
+  font-weight: bold;
+  text-align: center; /* Center align if needed */
+  color: #000000; /* Add your preferred color */
+  margin-top: 20px; /* Add some space from the top */
+  margin-top: -10px;
+}
+
+.name-container {
+  display: flex;
+  justify-content: center; /* Centers the name horizontally */
+}
+
+.shining-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    .shining-text {
+      font-size: 1em;
+      font-weight: bold;
+      color: #000000;
+      letter-spacing: 2.5px;
+      position: relative;
+      text-align: right;
+      margin-bottom: 15px;
+      margin-top: 5px;
+      overflow: hidden;
+
+ 
+    }
+
+    .shining-text::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+      animation: shineEffect 2s infinite ease-in-out;
+    }
+
+    .shining-border {
+      padding: 15px 30px;
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #fff;
+      text-align: right;
+      border: 3px solid #fff;
+      border-radius: 10px;
+      margin-top: 10px;
+
+      /* Glow effect for the border */
+      animation: glowBorder 3s infinite alternate;
+    }
+
+    /* Animation for glowing text */
+    @keyframes glowText {
+      0% {
+        text-shadow: 0 0 5px #ffffff, 0 0 10px rgb(255, 255, 255)rgb(0, 0, 0)0 20px rgb(0, 0, 0);
+      }
+      60% {
+        text-shadow: 0 0 20px #ffffff, 0 0 30px rgb(255, 255, 255), 0 0 40px rgb(0, 0, 0);
+      }
+    }
+
+    /* Animation for shine effect */
+    @keyframes shineEffect {
+      0% {
+        left: -100%;
+      }
+      50% {
+        left: 100%;
+      }
+      100% {
+        left: 100%;
+      }
+    }
+
+
+.research-interest-label {
+  font-size: 1em;
+  margin-left: 550px; 
+  margin-top: -110px;
+  color: #000000;
+  text-align: right;
+}
+a {
+    color: rgb(97, 97, 97); 
+    text-decoration: none; 
+    margin-right: 0px; 
+    font-size: 1em; 
+    margin-left:0px;
+  }
+
+  a:hover {
+    color: rgb(0, 0, 0); 
+  }
+ 
+.projects-heading {
+    margin-bottom: 20px; 
+    text-align: left; 
+    font-size: 2.2em; /* Same font styling as big-name */
+    font-weight: bold;
+    color: #000000; 
+}
+
+
+  </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="index.html">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+        <nav>
+          <a href="index.html#resume">Resume</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+    
+      
+
+    <section id="contact">
+        <div class="projects-heading" >
+            Contact
+        </div>
+        <div>
+            <p>
+                <i class="fas fa-envelope" style="color: #06396f; margin-right: 5px;"></i>
+                
+                <a href="mailto:moiukh29@gmail.com" style="color: #007bff; text-decoration: none;">moiukh29@gmail.com</a>
+                or
+                <a href="mailto:tahsina.moiukh@g.bracu.ac.bd" style="color: #007bff; text-decoration: none;">tahsina.moiukh@g.bracu.ac.bd</a>
+                </p>
+              </p>
+            <p>
+                <a href="https://www.linkedin.com/in/tahsina-m-8947472a4/" style="color: #007bff; text-decoration: none;"><i class="fab fa-linkedin" style="color: #06396f; margin-right: 5px;"></i>
+                </a>
+                
+                <a href="https://www.linkedin.com/in/tahsina-m-8947472a4/" style="color: #007bff; text-decoration: none;">linkedin.com/tahsina-moiukh</a>
+                </p>
+            <p>
+                <a href="https://github.com/moiukht" style="color: #007bff; text-decoration: none;"><i class="fab fa-github" style="color: #06396f; margin-right: 5px;"></i>
+                </a>
+                
+                <a href="https://github.com/moiukht" style="color: #007bff; text-decoration: none;">github.com/moiukht</a>
+                </p>
+  </div>
+
+</body>
+
+</html>
+
